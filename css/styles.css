@@ -56,13 +56,41 @@ header {
     letter-spacing: 0.02em;
 }
 
-.site-nav .link {
-    color: var(--title-text-color);
-    text-decoration: none;
+.main-nav {
+    display: flex;
+    align-items: center;
 }
 
-.site-nav .link.current {
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child),
+.contacts .item:not(:last-child) {
+    margin-right: 50px;
+}
+.nav .link {
+    color: var(--title-text-color);
+    text-decoration: none;
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.nav .link.current {
     color: var(--accent-color);
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
 }
 
 .contacts .link {
@@ -70,8 +98,8 @@ header {
     text-decoration: none;
 }
 
-.site-nav .link:hover, 
-.site-nav .link:focus,
+.nav .link:hover, 
+.nav .link:focus,
 .contacts .link:hover,
 .contacts .link:focus {
     color: var(--accent-color);
@@ -184,7 +212,7 @@ header {
     display: inline-block;
     padding: 10px 32px;
     min-width: 200px;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .button.secondary {
@@ -202,6 +230,7 @@ header {
 .button.secondary:focus {
     background-color: var(--accent-color);
     color: var(--primary-white-color);
+    
 }
 
 /* footer */
@@ -225,6 +254,12 @@ address {
 }
 
 /* стилизация секции galary на стр портфолио */
+
+.galary {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 .galary-title {
     color: var(--title-text-color);
     font-weight: 700;
