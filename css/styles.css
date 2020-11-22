@@ -8,6 +8,14 @@
     --bg-color: #2F303A;
 }
 
+/* html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  } */
+
 body {
     background-color: var(--primary-white-color);
     color: var(--primary-text-color);
@@ -20,6 +28,9 @@ body {
 /* сброс маркеров у ненумерованных списков*/
 ul {
     list-style: none;
+
+    margin: 0%;
+    padding: 0%;
 }
 
 /* стилизация логотипа в хедере*/
@@ -74,6 +85,23 @@ header {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.work {
+    margin-bottom: 94px;
+}
+
+.advantages {
+    margin-top: 94px;
+    /* margin-bottom: 94px; */
+}
+
+.advantages-hidden-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .advantages-title {
@@ -82,14 +110,23 @@ header {
     font-size: 14px;
     line-height: 1.14px;
     text-transform: uppercase;
+
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .advantages-text {
     line-height: 1.71px;
+
+    margin-top: 0px;
+    margin-bottom: 94px;
 }
 
 .staff {
     background-color: var(--secondary-bg-color);
+
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .name {
@@ -97,11 +134,17 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19px;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .profession {
     font-size: 16px;
     line-height: 1.19px;
+
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 /* стилицация героя */
 .hero {
@@ -116,12 +159,19 @@ header {
     font-size: 44px;
     line-height: 1.36;
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 30px;
+
 }
 
 /* button */
 .button {
     font-size: 16px;
     text-decoration: none;
+
+    border-radius: 4px;
+    border: 1px solid transparent;
 }
 
 .button.primary {
@@ -130,6 +180,11 @@ header {
     font-weight: 700;
     line-height: 1.87;
     align-items: center;
+
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
 }
 
 .button.secondary {
@@ -139,6 +194,8 @@ header {
     line-height: 1.62;
     letter-spacing: 0.03em;
     font-family: inherit;
+
+    padding: 6px 22px;
 }
 
 .button.secondary:hover,
@@ -185,3 +242,10 @@ address {
     text-decoration: none;
     color: currentColor;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}    
