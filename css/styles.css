@@ -56,11 +56,7 @@ header {
     letter-spacing: 0.02em;
 }
 
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-
+.main-nav,
 .nav {
     display: flex;
     align-items: center;
@@ -118,13 +114,14 @@ header {
     margin-bottom: 50px;
 }
 
-.work {
-    margin-bottom: 94px;
+/* секция преимуществ */
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .advantages {
-    margin-top: 94px;
-    /* margin-bottom: 94px; */
+    margin-bottom: 94px; 
 }
 
 .advantages-hidden-title {
@@ -132,11 +129,19 @@ header {
     margin-bottom: 0px;
 }
 
+.advantages-list .item {
+    width: 270px;
+}
+
+/* .advantages-list .item:not(:last-child) {
+    margin-right: 30px;
+} */
+
 .advantages-title {
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     text-transform: uppercase;
 
     margin-top: 0px;
@@ -144,17 +149,40 @@ header {
 }
 
 .advantages-text {
-    line-height: 1.71px;
+    line-height: 1.71;
 
     margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* чем занимается студия */
+.work {
     margin-bottom: 94px;
 }
 
+.work-list {
+    display:flex;
+    justify-content: space-between;
+}
+
+.work-photo {
+display: block;
+}
+
+/* секция команды */
 .staff {
     background-color: var(--secondary-bg-color);
 
     padding-top: 94px;
     padding-bottom: 94px;
+}
+
+.staff-list {
+    display: flex;
+    justify-content: space-between;
+}
+.staff-photo {
+    display: block;
 }
 
 .name {
@@ -165,15 +193,18 @@ header {
 
     margin-top: 30px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .profession {
     font-size: 16px;
-    line-height: 1.19px;
+    line-height: 1.19;
 
     margin-top: 0px;
     margin-bottom: 30px;
+    text-align: center;
 }
+
 /* стилицация героя */
 .hero {
     background-color: var(--bg-color);
@@ -251,6 +282,8 @@ address {
 .footer .link {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+
+    display: block;
 }
 
 /* стилизация секции galary на стр портфолио */
