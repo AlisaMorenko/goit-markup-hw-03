@@ -83,6 +83,7 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav,
@@ -366,7 +367,6 @@ address {
 .galary {
     padding-top: 94px;
     padding-bottom: 94px;
-    border-top: 1px solid #ECECEC;
 }
 
 .filter {
